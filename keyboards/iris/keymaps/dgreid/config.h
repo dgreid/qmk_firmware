@@ -20,6 +20,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
+// Permissive hold allow tap toggle keys to work before the repeat time out.
+#define PERMISSIVE_HOLD
+
 /* Use I2C or Serial, not both */
 
 // #define USE_SERIAL
