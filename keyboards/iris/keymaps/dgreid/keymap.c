@@ -19,7 +19,7 @@ enum custom_keycodes {
   ADJUST,
 };
 
-#define KC_SYMB MO(_SYMBOL)  // Momentary toggle layer SYMBOL.
+#define KC_SYMB LT(_SYMBOL, KC_BSPC)  // Momentary toggle layer SYMBOL.
 #define KC_NUMP MO(_NUMPAD)  // Momentary toggle layer NUMPAD.
 #define KC_FUNC MO(_FUNCTION)  // Momentary toggle layer FUNCTION.
 
