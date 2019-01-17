@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      ESC , A  , O  , E  , U  , I  ,                D  , H  , T  , N  , S  ,ENT ,
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     BSPC,SCLN, Q  , J  , K  , X  ,NUMP,     RGUI, B  , M  , W  , V  , Z  ,SLSH,
+     NUMP,SCLN, Q  , J  , K  , X  ,NUMP,     RGUI, B  , M  , W  , V  , Z  ,SLSH,
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
                        LALT,LCTL,SYMB,         SPC ,RSFT,RALT
   //                  `----+----+----'        `----+----+----'
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          ,LT  ,GT  ,LPRN,RPRN,DQT ,               BSLS,UNDS,ASTR,MINS,EQL ,GRV ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-         ,    ,    ,TILD,DLR ,    ,FUNC,     FUNC,CIRC,SLSH,COLN,AMPR,QUES,AT  ,
+         ,    ,    ,TILD,DLR ,    ,NUMP,     FUNC,CIRC,SLSH,COLN,AMPR,QUES,AT  ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,    ,             ,    ,
   //                  `----+----+----'        `----+----+----'
