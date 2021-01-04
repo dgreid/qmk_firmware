@@ -195,10 +195,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------+---------------+-----------//
 
       // right hand
-      KC_RGUI,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
-      LAY_FUNC, KC_0,    KC_F1,   KC_F2,   KC_F3,   KC_F10,  KC_TILD,
+      KC_RGUI,  KC_6,    KC_F10,  KC_F11,  KC_F12,  KC_0,    KC_BSPC,
+      LAY_FUNC, KC_0,    KC_F7,   KC_F8,   KC_F9,   KC_F12,  KC_TILD,
                 KC_COMM, KC_F4,   KC_F5,   KC_F6,   KC_F11,  KC_ENT,
-      KC_ESC,   KC_DOT,  KC_F7,   KC_F8,   KC_F9,   KC_F12,  KC_SLSH,
+      KC_ESC,   KC_DOT,  KC_F1,   KC_F2,   KC_F3,   KC_F10,  KC_SLSH,
                          KC_RSFT, KC_RALT, KC_RGUI, KC_SLSH, KC_RCTL,
 
       // right thumb
