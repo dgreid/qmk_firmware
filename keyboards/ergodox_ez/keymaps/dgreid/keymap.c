@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //              |               |           //
             SYMB,             KC_LGUI,//----------//
       //              |               |           //
-                                         NUMP,    //
+                                         KC_LALT, //
       //              |               |           //
       //              |               |           //
       //--------------+---------------+-----------//
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //                 |                 |           //
       //-----------------|                 |           //
       //                 |                 |           //
-          KC_RALT,             KC_BSPC,        KC_SPC  //
+          KC_TAB,              KC_BSPC,        KC_SPC  //
       //                 |                 |           //
       //-----------------+-----------------+-----------//
 
