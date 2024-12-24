@@ -10,13 +10,15 @@
 extern keymap_config_t keymap_config;
 
 #define _DVORAK 0
-#define _SYMBOL 1
-#define _NUMPAD 2
-#define _FUNCTION 3
-#define _SPECIAL 4
+#define _QWERTY 1
+#define _SYMBOL 2
+#define _NUMPAD 3
+#define _FUNCTION 4
+#define _SPECIAL 5
 
 enum custom_keycodes {
   DVORAK = SAFE_RANGE,
+  QWERTY,
   SYMBOL,
   NUMPAD,
   FUNCTION,
@@ -30,6 +32,8 @@ enum custom_keycodes {
 #define NUMP MO(_NUMPAD)  // Momentary toggle layer NUMPAD.
 #define LAY_FUNC MO(_FUNCTION)  // Momentary toggle layer FUNCTION.
 #define LAY_SPECIAL MO(_SPECIAL)  // Momentary toggle layer SPECIAL.
+#define LAY_QWERTY  TT(_QWERTY)  // toggle layer QWERTY.
+#define LAY_DVORAK  TT(_DVORAK)  // toggle layer DVORAK.
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -58,10 +62,57 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------+---------------+-----------//
 
       // right hand
-      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LAY_QWERTY,
       LAY_SPECIAL,  KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_TILD,
                     KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_ENT,
       NUMP,         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_SLSH,
+                             KC_RSFT, KC_RALT, KC_RGUI, KC_SLSH, KC_RCTL,
+
+      // right thumb
+      //-----------------+----------------//
+      //                 |                //
+           KC_HOME,            KC_RGUI,   //
+      //                 |                //
+      //-----------------+-----------------+-----------//
+      //                 |                 |           //
+           KC_END,
+      //                 |                 |           //
+      //-----------------|                 |           //
+      //                 |                 |           //
+          KC_TAB,              KC_BSPC,        KC_SPC  //
+      //                 |                 |           //
+      //-----------------+-----------------+-----------//
+
+  ),
+  [_QWERTY] = LAYOUT_ergodox(
+      // left hand
+      KC_DEL,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,   LAY_FUNC,
+      KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,   LAY_SPECIAL,
+      KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,
+      KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,   NUMP,
+      KC_LCTL, KC_LALT, KC_LGUI, KC_LALT, KC_LCTL,
+
+      // left thumb
+                      //--------------+-----------//
+                      //              |           //
+                              KC_LALT,   KC_CAPS, //
+                      //              |           //
+      //--------------+---------------+-----------//
+      //              |               |           //
+                                         KC_INS,  //
+      //              |               |           //
+            SYMB,             KC_LGUI,//----------//
+      //              |               |           //
+                                         KC_LALT, //
+      //              |               |           //
+      //              |               |           //
+      //--------------+---------------+-----------//
+
+      // right hand
+      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LAY_QWERTY,
+      LAY_SPECIAL,  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_TILD,
+                    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
+      NUMP,         KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
                              KC_RSFT, KC_RALT, KC_RGUI, KC_SLSH, KC_RCTL,
 
       // right thumb
