@@ -5,7 +5,7 @@
 #include "eeconfig.h"
 
 // to build this keymap
-// make ergodox_ez:dvorak_42_key:teensy
+// make ergodox_ez:dgreid:teensy
 
 extern keymap_config_t keymap_config;
 
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------+---------------+-----------//
 
       // right hand
-      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LAY_QWERTY,
+      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
       LAY_SPECIAL,  KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_TILD,
                     KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_ENT,
       NUMP,         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_SLSH,
@@ -109,7 +109,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------+---------------+-----------//
 
       // right hand
-      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LAY_QWERTY,
+      LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
       LAY_SPECIAL,  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_TILD,
                     KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT,
       NUMP,         KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
@@ -156,7 +156,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------+---------------+-----------//
 
       // right hand
-      KC_RGUI,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+      KC_RGUI,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LAY_DVORAK,
       LAY_FUNC, KC_EXLM, KC_PLUS, KC_HASH, KC_PIPE, KC_PERC, KC_TILD,
                 KC_BSLS, KC_UNDS, KC_ASTR, KC_MINS, KC_EQL,  KC_GRV,
       KC_ESC,   KC_CIRC, KC_SLSH, KC_COLN, KC_AMPR, KC_QUES, KC_AT,
@@ -203,7 +203,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------+---------------+-----------//
 
       // right hand
-      KC_RGUI,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+      KC_RGUI,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LAY_QWERTY,
       LAY_FUNC, KC_0,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TILD,
                 KC_COMM, KC_4,    KC_5,    KC_6,    KC_0,    KC_ENT,
       KC_ESC,   KC_DOT,  KC_1,    KC_2,    KC_3,    KC_0,    KC_SLSH,
