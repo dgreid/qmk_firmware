@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       LAY_FUNC,     KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
       LAY_SPECIAL,  KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_TILD,
                     KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_ENT,
-      NUMP,         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_SLSH,
+      NUMP,         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_RSFT,
                              KC_RSFT, KC_RALT, KC_RGUI, KC_SLSH, KC_RCTL,
 
       // right thumb
