@@ -28,9 +28,9 @@ enum customKeycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_DVORAK] = LAYOUT_gergo(
-    KC_TAB,  KC_QUOTE,  KC_COMM,   KC_DOT,   KC_P, KC_Y,                                   KC_F, KC_G, KC_C, KC_R, KC_L, KC_TILD,
-    KC_ESC,  KC_A,  KC_O,   KC_E,   KC_U, KC_I, NUMP,                       KC_DEL,    KC_D, KC_H, KC_T, KC_N, KC_S, KC_ENT,
-    KC_LSFT, KC_SCLN,  KC_Q,   KC_J,   KC_K, KC_X, SYMB, KC_CAPS,     KC_RGUI, KC_BSPC, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_SLSH,
+    KC_TAB,  KC_QUOTE,  KC_COMM,   KC_DOT,    KC_P,  KC_Y,                                     KC_F, KC_G, KC_C, KC_R, KC_L, KC_TILD,
+    KC_ESC,  KC_A,      KC_O,      KC_E,      KC_U, KC_I, NUMP,                        KC_DEL, KC_D, KC_H, KC_T, KC_N, KC_S, KC_ENT,
+    KC_LSFT, KC_SCLN,   KC_Q,      KC_J,      KC_K, KC_X, SYMB, KC_CAPS,     KC_RGUI, KC_BSPC, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_SLSH,
       KC_LALT, KC_LCTL, SYMB, NUMP,                                      KC_BSPC, KC_SPC, KC_RSFT, KC_RALT
     ),
 [_SYMBOL] = LAYOUT_gergo(
