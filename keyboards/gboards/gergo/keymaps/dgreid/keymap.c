@@ -30,25 +30,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_DVORAK] = LAYOUT_gergo(
     KC_TAB,  KC_QUOTE,  KC_COMM,   KC_DOT,    KC_P,  KC_Y,                                                   KC_F, KC_G, KC_C, KC_R, KC_L, KC_TILD,
     KC_ESC,  KC_A,      KC_O,      KC_E,      KC_U, KC_I, SYMB,                                      KC_DEL, KC_D, KC_H, KC_T, KC_N, KC_S, KC_ENT,
-    KC_LSFT, KC_SCLN,   KC_Q,      KC_J,      KC_K, KC_X, NUMP, KC_LGUI,                   KC_RGUI, KC_BSPC, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_SLSH,
-                                            KC_LALT, KC_LCTL, SYMB, MT(MOD_LSHFT, NUMP),   KC_BSPC, KC_SPC, KC_RSFT, KC_RALT
+    KC_LCTL, KC_SCLN,   KC_Q,      KC_J,      KC_K, KC_X, NUMP, KC_LGUI,                   KC_RGUI,  NUMP,   KC_B, KC_M, KC_W, KC_V, KC_Z, KC_RCTL,
+                                            KC_LALT, SYMB, MT(MOD_LSFT, KC_TAB), KC_ESC,   KC_ENT, MT(MOD_RGUI, KC_BSPC), MT(MOD_RCTL, KC_SPC), KC_RALT
     ),
 [_SYMBOL] = LAYOUT_gergo(
     KC_TRNS,  KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_Y,                                   KC_EXLM, KC_PLUS, KC_HASH, KC_PIPE, KC_PERC, KC_TILD,
     KC_TRNS,  KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_DQT, KC_TRNS,                        KC_TRNS, KC_BSLS, KC_UNDS, KC_ASTR, KC_MINS, KC_EQL,  KC_GRV,
     KC_TRNS,  KC_SCLN, KC_Q,    KC_TILD, KC_DLR,  KC_DLR, KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS, KC_CIRC, KC_SLSH, KC_COLN, KC_AMPR, KC_QUES, KC_AT,
-                                        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_TRNS,  LAY_NUMPAD, KC_TRNS, KC_TRNS
+                                        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,        KC_TRNS, LT(LAY_FUNC, KC_BSPC),  LT(NUMP, KC_SPC), KC_TRNS
     ),
 [_NUMPAD] = LAYOUT_gergo(
-    KC_TRNS,  KC_QUOT, KC_PGUP, KC_UP,   KC_PGDN, KC_HOME,                                             KC_0,    KC_1,    KC_2,    KC_3,    KC_0, KC_TRNS,
+    KC_TRNS,  KC_QUOT, KC_PGUP, KC_UP,   KC_PGDN, KC_HOME,                                             KC_0,    KC_7,    KC_8,    KC_9,    KC_0, KC_TRNS,
     KC_TRNS,  KC_A,    KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  KC_TRNS,                          KC_TRNS,  KC_COMM, KC_4,    KC_5,    KC_6,    KC_0, KC_ENT,
-    KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS, KC_TRNS,  KC_DOT,  KC_7,    KC_8,    KC_9,    KC_0, KC_TRNS,
+    KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS, KC_TRNS,  KC_DOT,  KC_1,    KC_2,    KC_3,    KC_0, KC_TRNS,
                                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS
     ),
 [_FUNCTION] = LAYOUT_gergo(
-    KC_TRNS,  KC_QUOT, KC_PGUP, KC_UP,   KC_PGDN, KC_HOME,                                             KC_0,    KC_F1,    KC_F2,    KC_F3, KC_F10, KC_TRNS,
+    KC_TRNS,  KC_QUOT, KC_PGUP, KC_UP,   KC_PGDN, KC_HOME,                                             KC_0,    KC_F7,    KC_F8,    KC_F9, KC_F10, KC_TRNS,
     KC_TRNS,  KC_A,    KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  KC_TRNS,                          KC_TRNS,  KC_COMM, KC_F4,    KC_F5,    KC_F6, KC_F11, KC_ENT,
-    KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS, KC_TRNS,  KC_DOT,  KC_F7,    KC_F8,    KC_F9, KC_F12, KC_TRNS,
+    KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS, KC_TRNS,  KC_DOT,  KC_F1,    KC_F2,    KC_F3, KC_F12, KC_TRNS,
                                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,         KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS
     ),
 };
